@@ -76,6 +76,39 @@ body {
   a:hover {
 	text-decoration: underline;
   }
+  @media only screen and (max-width: 600px) {
+	/* adjust font sizes */
+	body {
+	  font-size: 14px;
+	}
+	
+	/* adjust layout */
+	.container {
+	  width: 100%;
+	  padding: 10px;
+	}
+	
+	/* adjust navigation menu */
+	.menu {
+	  display: none;
+	}
+	
+	.menu-icon {
+	  display: block;
+	}
+	
+	.menu-icon:hover {
+	  cursor: pointer;
+	}
+	
+	.menu-dropdown {
+	  display: none;
+	}
+	
+	.menu-icon.active + .menu-dropdown {
+	  display: block;
+	}
+  }
   
   /* Footer styles */
   footer {
