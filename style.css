@@ -1,0 +1,52 @@
+/* Set the background color to green */
+body {
+	background-color: #6ab04c;
+}
+
+/* Style the header */
+header {
+	background-color: #244b27;
+	color: #fff;
+	padding: 20px;
+}
+
+/* Style the navigation menu */
+nav ul {
+	list-style: none;
+	margin: 0;
+	padding: 0;
+}
+
+nav ul li {
+	display: inline-block;
+	margin-right: 20px;
+}
+
+nav ul li a {
+	color: #fff;
+	text-decoration: none;
+}
+
+/* Style the main content area */
+main {
+	margin: 20px;
+}
+
+section {
+	background-color: #fff;
+	color: #333;
+	margin-bottom: 20px;
+	padding: 20px;
+}
+
+section h2 {
+	color: #6ab04c;
+}
+
+/* Style the footer */
+footer {
+	background-color: #244b27;
+	color: #fff;
+	padding: 20px;
+	text-align: center;
+}
