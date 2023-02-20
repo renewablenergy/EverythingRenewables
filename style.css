@@ -1,178 +1,71 @@
 /* Body styles */
-}
-/* CSS for desktop devices */
-.container {
-  width: 960px;
-}
-
-/* CSS for tablets */
-@media screen and (max-width: 768px) {
-  .container {
-	width: 768px;
-  }
-}
-
-/* CSS for phones */
-@media screen and (max-width: 480px) {
-  .container {
-	width: 100%;
-	padding: 0 10px;
-  }
-}
-
 body {
-	font-family: 'Helvetica', sans-serif;
+	font-family: Arial, sans-serif;
 	font-size: 16px;
-	color: #444;
-	background-color: #F4F4F4;
+	line-height: 1.5;
+	color: #333;
+	background-color: #f5f5f5;
+	margin: 0;
+	padding: 0;
   }
-
-  @media only screen and (max-width: 600px) {
-	/* adjust font sizes */
-	body {
-	  font-size: 14px;
-	}
-	
-	/* adjust layout */
-	.container {
-	  width: 100%;
-	  padding: 10px;
-	}
-	
-	/* adjust navigation menu */
-	.menu {
-	  display: none;
-	}
-	
-	.menu-icon {
-	  display: block;
-	}
-	
-	.menu-icon:hover {
-	  cursor: pointer;
-	}
-	
-	.menu-dropdown {
-	  display: none;
-	}
-	
-	.menu-icon.active + .menu-dropdown {
-	  display: block;
-	}
-  }
-  
   
   /* Header styles */
   header {
-	background-color: #3A3A3A;
-	color: #FFF;
+	background-color: #004d40;
+	color: #fff;
 	padding: 20px;
-	display: flex;
-	justify-content: space-between;
-	align-items: center;
+	text-align: center;
   }
   
   header h1 {
-	font-size: 36px;
 	margin: 0;
+	font-size: 2em;
+	font-weight: bold;
   }
   
-  nav ul {
-	list-style: none;
-	margin: 0;
-	padding: 0;
-	display: flex;
-  }
-  
-  nav li {
-	margin: 0 10px;
-  }
-  
-  nav a {
-	color: #FFF;
-	text-decoration: none;
-  }
-  
-  nav a:hover {
-	text-decoration: underline;
-  }
-  
-  /* Main styles */
+  /* Main content styles */
   main {
 	max-width: 800px;
 	margin: 0 auto;
 	padding: 20px;
   }
   
-  h2 {
-	font-size: 24px;
-	margin-top: 40px;
+  /* Article styles */
+  article {
+	background-color: #fff;
+	padding: 20px;
 	margin-bottom: 20px;
+	border-radius: 5px;
   }
   
-  p {
-	margin-bottom: 20px;
+  article h2 {
+	margin-top: 0;
   }
   
-  ul {
-	margin-left: 20px;
-	margin-bottom: 20px;
-  }
-  
-  li {
-	margin-bottom: 10px;
-  }
-  
-  /* Link styles */
-  a {
-	color: #0072C6;
-	text-decoration: none;
-  }
-  
-  a:hover {
-	text-decoration: underline;
-  }
-  @media only screen and (max-width: 600px) {
-	/* adjust font sizes */
-	body {
-	  font-size: 14px;
-	}
-	
-	/* adjust layout */
-	.container {
-	  width: 100%;
-	  padding: 10px;
-	}
-	
-	/* adjust navigation menu */
-	.menu {
-	  display: none;
-	}
-	
-	.menu-icon {
-	  display: block;
-	}
-	
-	.menu-icon:hover {
-	  cursor: pointer;
-	}
-	
-	.menu-dropdown {
-	  display: none;
-	}
-	
-	.menu-icon.active + .menu-dropdown {
-	  display: block;
-	}
+  article p {
+	margin-bottom: 1em;
   }
   
   /* Footer styles */
   footer {
-	background-color: #3A3A3A;
-	color: #FFF;
+	background-color: #ddd;
 	padding: 20px;
 	text-align: center;
+	font-size: 0.8em;
   }
   
-  footer p {
-	margin: 0;
+  /* Mobile styles */
+  @media screen and (max-width: 480px) {
+	main {
+	  padding: 10px;
+	}
+  
+	article {
+	  padding: 10px;
+	}
+  
+	header h1 {
+	  font-size: 1.5em;
+	}
+  }
+  
