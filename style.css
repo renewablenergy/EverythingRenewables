@@ -156,4 +156,23 @@ body {
   footer p {
 	margin: 0;
   }
+  /* CSS for desktop devices */
+.container {
+	width: 960px;
+  }
+  
+  /* CSS for tablets */
+  @media screen and (max-width: 768px) {
+	.container {
+	  width: 768px;
+	}
+  }
+  
+  /* CSS for phones */
+  @media screen and (max-width: 480px) {
+	.container {
+	  width: 100%;
+	  padding: 0 10px;
+	}
+  }
   
